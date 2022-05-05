@@ -1,0 +1,7 @@
+alacritty/
+github-copilot/
+lvim/
+*.old/
+*.bak/
+
+.DS_Store
