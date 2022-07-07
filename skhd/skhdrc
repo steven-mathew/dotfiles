@@ -1,0 +1,32 @@
+#SKHD STUFF
+
+# if you're having troubles finding key codes for a key just type skhd --observe in a terminal and type a key. Pretty cool! Or just check the wiki.
+
+## HYPER == SHIFT + CMD + ALT + OPTION
+
+## Quickly restart the yabai launch agent
+ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+
+## Close active application
+hyper - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
+
+## rotate tree 90
+ctrl + alt + shift - k : yabai -m space --rotate 90
+ctrl + alt + shift - j : yabai -m space --rotate 270
+
+## swap window
+alt + shift - h : yabai -m window --swap west 
+alt + shift - j : yabai -m window --swap south
+alt + shift - k : yabai -m window --swap north
+alt + shift - l : yabai -m window --swap east
+
+## flip the tree vertically
+hyper - 0x27 : yabai -m space --mirror y-axis
+## flip the tree horizontally
+hyper - 0x17 : yabai -m space --mirror x-axis
+
+## toggle window fullscreen zoom
+hyper - f : yabai -m window --toggle zoom-fullscreen
+
+## float / unfloat window and center on screen
+alt - t : yabai -m window --toggle float;\ 
