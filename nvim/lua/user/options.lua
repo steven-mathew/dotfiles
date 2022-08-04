@@ -50,13 +50,18 @@ if not vim.tbl_contains(vim.opt.rtp:get(), base_dir) then
   vim.opt.rtp:append(base_dir)
 end
 
+-- vim.cmd[[
+--     let g:seoul256_background = 233
+--     colo seoul256
+-- ]]
+
 
 vim.cmd[[
     " Customize the highlight a bit.
     " Make comments more prominent -- they are important.
-    call Base16hi("Comment", g:base16_gui09, "", g:base16_cterm09, "", "", "")
+    " call Base16hi("Comment", g:base16_gui09, "", g:base16_cterm09, "", "", "")
     " Make it clearly visible which argument we're at.
-    call Base16hi("LspSignatureActiveParameter", g:base16_gui05, g:base16_gui03, g:base16_cterm05, g:base16_cterm03, "bold", "")
+    " call Base16hi("LspSignatureActiveParameter", g:base16_gui05, g:base16_gui03, g:base16_cterm05, g:base16_cterm03, "bold", "")
     " Would be nice to customize the highlighting of warnings and the like to make
     " them less glaring. But alas
     " https://github.com/nvim-lua/lsp_extensions.nvim/issues/21

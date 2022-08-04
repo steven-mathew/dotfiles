@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "/Users/steven/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
-  ["auto-session"] = {
-    loaded = true,
-    path = "/Users/steven/.local/share/nvim/site/pack/packer/start/auto-session",
-    url = "https://github.com/rmagatti/auto-session"
-  },
   ["base16-vim"] = {
     loaded = true,
     path = "/Users/steven/.local/share/nvim/site/pack/packer/start/base16-vim",
@@ -198,6 +193,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/steven/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  melange = {
+    loaded = true,
+    path = "/Users/steven/.local/share/nvim/site/pack/packer/start/melange",
+    url = "https://github.com/savq/melange"
   },
   neogit = {
     loaded = true,

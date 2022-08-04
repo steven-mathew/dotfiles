@@ -107,7 +107,7 @@ return packer.startup(function(use)
 	use("lewis6991/impatient.nvim")
 	use("goolord/alpha-nvim")
 	use("folke/which-key.nvim")
-	use("rmagatti/auto-session")
+	-- use("rmagatti/auto-session")
 	use("szw/vim-maximizer")
 	use("nvim-pack/nvim-spectre")
 	use("ggandor/lightspeed.nvim")
@@ -136,6 +136,10 @@ return packer.startup(function(use)
 	use("cespare/vim-toml")
 	use("stephpy/vim-yaml")
 	use("chriskempson/base16-vim")
+
+    use("savq/melange")
+
+    -- use("junegunn/seoul256.vim")
 	-- use{"theHamsta/nvim-dap-virtual-text", config = function() require("nvim-dap-virtual-text").setup() end}
 	-- TODO: Install following plugins
 	-- https://github.com/pwntester/octo.nvim
