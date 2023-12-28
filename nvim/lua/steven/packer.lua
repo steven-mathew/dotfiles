@@ -45,7 +45,23 @@ return require('packer').startup(function(use)
         end
     }
 
+    use { "tpope/vim-repeat" }
 
+    -- use {
+    --     "ggandor/leap.nvim",
+    --     config = function()
+    --         require('leap').create_default_mappings()
+    --     end,
+    -- }
+
+    use {
+        'folke/flash.nvim',
+        config = function()
+            require("flash").setup{
+
+            }
+        end,
+    }
 
     use {
         "luukvbaal/statuscol.nvim",

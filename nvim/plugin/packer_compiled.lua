@@ -129,17 +129,21 @@ _G.packer_plugins = {
     path = "/Users/steven/.local/share/nvim/site/pack/packer/start/express_line.nvim",
     url = "https://github.com/tjdevries/express_line.nvim"
   },
+  ["flash.nvim"] = {
+    config = { "\27LJ\2\n7\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\nflash\frequire\0" },
+    loaded = true,
+    path = "/Users/steven/.local/share/nvim/site/pack/packer/start/flash.nvim",
+    url = "https://github.com/folke/flash.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/steven/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
   ["gitsigns.nvim"] = {
-    config = { "\27LJ\2\nt\0\2\6\0\b\0\0146\2\0\0006\4\1\0009\4\2\0049\4\3\4'\5\4\0&\4\5\4B\2\2\0016\2\5\0'\4\6\0B\2\2\0029\2\a\2\18\4\1\0B\2\2\1K\0\1\0\nsetup\rgitsigns\frequire\bgit\17base46_cache\6g\bvim\vdofile\0" },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/Users/steven/.local/share/nvim/site/pack/packer/opt/gitsigns.nvim",
+    config = { "\27LJ\2\n�\1\0\0\5\0\18\0\0216\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\16\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\3=\3\17\2B\0\2\1K\0\1\0\nsigns\1\0\0\14untracked\1\0\1\ttext\b│\17changedelete\1\0\1\ttext\6~\14topdelete\1\0\1\ttext\b‾\vdelete\1\0\1\ttext\t󰍵\vchange\1\0\1\ttext\b│\badd\1\0\0\1\0\1\ttext\b│\nsetup\rgitsigns\frequire\0" },
+    loaded = true,
+    path = "/Users/steven/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["gruber-darker.nvim"] = {
@@ -295,6 +299,11 @@ _G.packer_plugins = {
     path = "/Users/steven/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-repeat"] = {
+    loaded = true,
+    path = "/Users/steven/.local/share/nvim/site/pack/packer/start/vim-repeat",
+    url = "https://github.com/tpope/vim-repeat"
+  },
   ["zen-mode.nvim"] = {
     loaded = true,
     path = "/Users/steven/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
@@ -303,38 +312,38 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
--- Config for: mellifluous.nvim
-time([[Config for mellifluous.nvim]], true)
-try_loadstring("\27LJ\2\nm\0\0\3\0\6\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\3\0009\0\4\0'\2\5\0B\0\2\1K\0\1\0\28colorscheme mellifluous\bcmd\bvim\nsetup\16mellifluous\frequire\0", "config", "mellifluous.nvim")
-time([[Config for mellifluous.nvim]], false)
--- Config for: nvim-web-nonicons
-time([[Config for nvim-web-nonicons]], true)
-try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-nonicons\frequire\0", "config", "nvim-web-nonicons")
-time([[Config for nvim-web-nonicons]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\nC\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\nicons\1\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
+-- Config for: flash.nvim
+time([[Config for flash.nvim]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\nflash\frequire\0", "config", "flash.nvim")
+time([[Config for flash.nvim]], false)
+-- Config for: nvim-web-nonicons
+time([[Config for nvim-web-nonicons]], true)
+try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-nonicons\frequire\0", "config", "nvim-web-nonicons")
+time([[Config for nvim-web-nonicons]], false)
 -- Config for: statuscol.nvim
 time([[Config for statuscol.nvim]], true)
 try_loadstring("\27LJ\2\nF\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\vsetopt\2\nsetup\14statuscol\frequire\0", "config", "statuscol.nvim")
 time([[Config for statuscol.nvim]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\n�\1\0\0\5\0\18\0\0216\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\16\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\3=\3\17\2B\0\2\1K\0\1\0\nsigns\1\0\0\14untracked\1\0\1\ttext\b│\17changedelete\1\0\1\ttext\6~\14topdelete\1\0\1\ttext\b‾\vdelete\1\0\1\ttext\t󰍵\vchange\1\0\1\ttext\b│\badd\1\0\0\1\0\1\ttext\b│\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
+-- Config for: mellifluous.nvim
+time([[Config for mellifluous.nvim]], true)
+try_loadstring("\27LJ\2\nm\0\0\3\0\6\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\3\0009\0\4\0'\2\5\0B\0\2\1K\0\1\0\28colorscheme mellifluous\bcmd\bvim\nsetup\16mellifluous\frequire\0", "config", "mellifluous.nvim")
+time([[Config for mellifluous.nvim]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
 -- Conditional loads
 time([[Conditional loading of lir-mmv.nvim]], true)
   require("packer.load")({"lir-mmv.nvim"}, {}, _G.packer_plugins)
 time([[Conditional loading of lir-mmv.nvim]], false)
-vim.cmd [[augroup packer_load_aucmds]]
-vim.cmd [[au!]]
-  -- Filetype lazy-loads
-time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType gitcommit ++once lua require("packer.load")({'gitsigns.nvim'}, { ft = "gitcommit" }, _G.packer_plugins)]]
-vim.cmd [[au FileType diff ++once lua require("packer.load")({'gitsigns.nvim'}, { ft = "diff" }, _G.packer_plugins)]]
-time([[Defining lazy-load filetype autocommands]], false)
-vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
