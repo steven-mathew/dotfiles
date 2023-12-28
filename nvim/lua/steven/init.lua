@@ -1,8 +1,8 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-require("theprimeagen.set")
-require("theprimeagen.remap")
+require("steven.set")
+require("steven.remap")
 
 local augroup = vim.api.nvim_create_augroup
 local ThePrimeagenGroup = augroup('ThePrimeagen', {})
